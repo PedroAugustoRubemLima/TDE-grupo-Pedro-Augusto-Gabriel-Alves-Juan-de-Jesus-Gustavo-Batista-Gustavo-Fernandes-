@@ -24,10 +24,11 @@ function renderNav(activePage) {
             <ul class="nav-links">${linksHtml}</ul>
             <div class="nav-right">
                 <span id="user-info"></span>
-                <button class="btn-logout" onclick="logout()">Sair</button>
+                <button class="btn-logout" id="btn-logout">Sair</button>
             </div>
         </nav>
     `);
 
+    document.getElementById('btn-logout').addEventListener('click', logout);
     renderUserInfo();
 }

@@ -51,15 +51,14 @@ nav {
     position: fixed;
     top: 0; left: 0; right: 0;
     height: var(--nav-h);
-    background: rgba(13,17,23,0.97);
-    border-bottom: 1px solid var(--border);
+    background: #111827;
+    border-bottom: 1px solid rgba(255,255,255,0.09);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 1.75rem;
     z-index: 100;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.5);
 }
 
 .nav-logo {
@@ -79,11 +78,12 @@ nav {
     justify-content: center;
     width: 26px;
     height: 26px;
-    background: var(--accent);
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.14);
     border-radius: 6px;
     font-size: 0.65rem;
     font-weight: 800;
-    color: #fff;
+    color: var(--text);
     letter-spacing: 0;
     flex-shrink: 0;
 }
@@ -426,11 +426,12 @@ table tbody tr:last-child td { border-bottom: none; }
     justify-content: center;
     width: 34px;
     height: 34px;
-    background: var(--accent);
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.14);
     border-radius: 8px;
     font-size: 0.75rem;
     font-weight: 800;
-    color: #fff;
+    color: var(--text);
     flex-shrink: 0;
 }
 
