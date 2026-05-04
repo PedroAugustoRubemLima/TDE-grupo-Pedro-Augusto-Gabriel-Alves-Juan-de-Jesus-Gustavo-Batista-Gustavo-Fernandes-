@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendas — JB Estoque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="page-header">
+    <h1 class="page-title">Historico de Vendas</h1>
+    <button class="btn btn-ghost" onclick="gerarPDF()">Baixar PDF</button>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Filtrar por Periodo</div>
+    <div style="display:flex;gap:0.75rem;align-items:flex-end;flex-wrap:wrap">
+      <div class="form-group" style="margin:0">
+        <label>Data Inicio</label>
+        <input type="date" id="dataInicio">
+      </div>
+      <div class="form-group" style="margin:0">
+        <label>Data Fim</label>
+        <input type="date" id="dataFim">
+      </div>
+      <button class="btn btn-primary" onclick="filtrar()">Filtrar</button>
+      <button class="btn btn-ghost" onclick="limparFiltro()">Ver Todas</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Data</th>
+            <th>Cliente</th>
+            <th>Funcionario</th>
+            <th>Total</th>
+            <th>Itens</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaVendas"></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<script src="auth.js"></script>
+<script src="nav.js"></script>
+<script src="historico-vendas.js"></script>
+</body>
+</html>

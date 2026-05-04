@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Produto — JB Estoque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <div class="page-header">
+    <h1 class="page-title">Cadastrar Produto</h1>
+    <a href="/produto-listagem.html" class="btn btn-ghost">Ver Listagem</a>
+  </div>
+
+  <div class="card" style="max-width:580px">
+    <div class="form-row">
+      <div class="form-group">
+        <label for="nome">Nome *</label>
+        <input type="text" id="nome" placeholder="Ex: Queijo Mussarela">
+      </div>
+      <div class="form-group">
+        <label for="tipo">Tipo *</label>
+        <input type="text" id="tipo" placeholder="Ex: Queijo, Iogurte, Leite">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="preco">Preco (R$) *</label>
+        <input type="number" id="preco" placeholder="0,00" step="0.01" min="0">
+      </div>
+      <div class="form-group">
+        <label for="quantidade">Quantidade *</label>
+        <input type="number" id="quantidade" placeholder="0" step="0.01" min="0">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="dataVencimento">Data de Vencimento</label>
+      <input type="date" id="dataVencimento">
+    </div>
+
+    <div class="form-actions">
+      <button class="btn btn-primary" id="btnSalvar">Salvar Produto</button>
+    </div>
+
+    <div class="msg" id="msg"></div>
+  </div>
+</main>
+
+<script src="auth.js"></script>
+<script src="nav.js"></script>
+<script src="produto-cadastro.js"></script>
+</body>
+</html>

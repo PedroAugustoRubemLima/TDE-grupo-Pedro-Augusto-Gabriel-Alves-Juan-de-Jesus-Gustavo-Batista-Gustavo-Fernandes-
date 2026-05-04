@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — JB Estoque</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1 class="page-title" style="margin-bottom:1.5rem">Dashboard</h1>
+
+  <div class="stats-grid">
+    <div class="stat-card green">
+      <div class="stat-label">Produtos Ativos</div>
+      <div class="stat-value green" id="totalProdutos">—</div>
+    </div>
+    <div class="stat-card blue">
+      <div class="stat-label">Clientes Cadastrados</div>
+      <div class="stat-value blue" id="totalClientes">—</div>
+    </div>
+    <div class="stat-card orange">
+      <div class="stat-label">Vendas Realizadas</div>
+      <div class="stat-value orange" id="totalVendas">—</div>
+    </div>
+    <div class="stat-card red">
+      <div class="stat-label">Estoque Baixo</div>
+      <div class="stat-value red" id="estoqueBaixo">—</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Ultimas Vendas</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>#</th><th>Data</th><th>Cliente</th><th>Total</th></tr>
+        </thead>
+        <tbody id="tabelaVendas"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Produtos com Estoque Baixo</div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Produto</th><th>Tipo</th><th>Quantidade</th><th>Vencimento</th></tr>
+        </thead>
+        <tbody id="tabelaEstoqueBaixo"></tbody>
+      </table>
+    </div>
+  </div>
+</main>
+
+<script src="auth.js"></script>
+<script src="nav.js"></script>
+<script src="menu.js"></script>
+</body>
+</html>
