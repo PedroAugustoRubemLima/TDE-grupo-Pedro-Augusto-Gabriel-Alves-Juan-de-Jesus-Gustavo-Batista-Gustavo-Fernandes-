@@ -6,6 +6,7 @@ function renderNav(activePage) {
         { href: '/produto-cadastro.html',     label: 'Cadastrar Produto' },
         { href: '/retira-estoque.html',       label: 'Estoque' },
         { href: '/historico-vendas.html',     label: 'Vendas' },
+        { href: '/nova-venda.html',           label: 'Nova Venda' },
         { href: '/cliente-cadastro.html',     label: 'Clientes' },
         { href: '/funcionario-cadastro.html', label: 'Funcionarios' },
         { href: '/image-gallery.html',        label: 'Galeria' },
